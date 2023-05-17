@@ -57,7 +57,7 @@ const etkinlikler = [
 ];
 
 client.on("messageCreate", (message) => {
-  if (message.channel.id === "1099599631790374934") {
+  if (message.channel.id === "CHANNEL_ID") {
     if (message.content === `${prefix}lineup`) {
       message.reply("C.Engelhart, A.Güven, L.Heinrich ve L.Vanthoor!");
     }
@@ -96,7 +96,7 @@ client.on("ready", () => {
     const timeUntilTarget = targetTime.getTime() - currentTime.getTime();
     if (timeUntilTarget > 0) {
       setTimeout(() => {
-        const channel = client.channels.cache.get("1099599631790374934"); // Kanal ID'sini buraya girin
+        const channel = client.channels.cache.get("CHANNEL_ID");
         if (channel) {
           channel.send(`${etkinlik.aciklama}`);
         }
@@ -106,5 +106,5 @@ client.on("ready", () => {
 });
 
 client.login(
-  "MTEwODA3Nzk3MjgzNTAyMDkyMA.G_ujX6.Y0xaq3wAr9yxJVS-G0Et7TBbd1k_tvLA-xGGRY"
+  "TOKEN_HERE"
 );
