@@ -1,5 +1,5 @@
 {
-  "name": "ayhanca",
+  "name": "discordbot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.9.0",
-    "moment": "^2.29.4",
-    "stream": "^0.0.2"
+    "discord.js": "^14.9.0"
   }
 }
